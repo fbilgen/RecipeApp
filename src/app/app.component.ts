@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'RecipeShoppingApp';
+   showRecipe = true;
+  onMenuClicked(showRecipe: boolean) {
+
+    this.showRecipe = showRecipe;
+
+  }
 }

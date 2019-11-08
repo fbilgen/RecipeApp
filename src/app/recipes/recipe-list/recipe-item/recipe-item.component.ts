@@ -16,14 +16,14 @@ import {
 })
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
-  @Output() recipeSelected = new EventEmitter<Recipe>();
+  @Output() recipeSelected = new EventEmitter<void>();
   constructor() {}
 
   ngOnInit() {}
 
 
   recipeClicked() {
-    this.recipeSelected.emit(this.recipe);
+    this.recipeSelected.emit();
   }
 
 }

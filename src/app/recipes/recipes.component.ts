@@ -14,7 +14,7 @@ export class RecipesComponent implements OnInit {
   }
 
 
-  onRecipeSelected(event) {
+  onRecipeSelected(event: Recipe) {
   this.selectedRecipe = event;
   }
 
